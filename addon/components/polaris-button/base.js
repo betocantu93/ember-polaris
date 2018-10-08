@@ -22,7 +22,7 @@ export default Component.extend({
     'iconOnly:Polaris-Button--iconOnly',
     'sizeClass',
   ],
-  /*
+  /**
    * When we have an icon and no text.
    *
    * @private
@@ -39,7 +39,7 @@ export default Component.extend({
   focusIn: mapEventToAction('onFocus'),
   focusOut: mapEventToAction('onBlur'),
 
-  /*
+  /**
    * Computed properties.
    */
   sizeClass: computed('size', function() {

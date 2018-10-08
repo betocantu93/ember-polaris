@@ -41,7 +41,7 @@ export default Component.extend({
 
   type: 'button',
 
-  /*
+  /**
    * Action handlers.
    */
   mouseUp: handleMouseUpByBlurring,

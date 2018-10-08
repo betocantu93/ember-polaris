@@ -1,7 +1,7 @@
 import { isPresent } from '@ember/utils';
 import { clamp } from './math';
 
-/*
+/**
  * Implements https://en.wikipedia.org/wiki/HSL_and_HSV#From_HSV
  * to convert a hue/saturation/brightness color to RGB.
  *
@@ -71,7 +71,7 @@ export function hsbaToRgba(color) {
   };
 }
 
-/*
+/**
  * Implements https://en.wikipedia.org/wiki/HSL_and_HSV
  * to convert an rgba color to hsba.
  *
@@ -117,7 +117,7 @@ export function rgbaToHsb(color) {
   };
 }
 
-/*
+/**
  * Converts an RGB(a) color represented as an object into a valid CSS `rgb` / `rgba`
  * color.
  *
@@ -152,7 +152,7 @@ export function hsbToHex(color) {
   return rgbToHex(hsbaToRgba(color));
 }
 
-/*
+/**
  * Converts an object representation of an RGB(a) color to HEX.
  *
  * NOTE: This is shamelessly copied from https://github.com/sindresorhus/rgb-hex
