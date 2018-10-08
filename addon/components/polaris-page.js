@@ -142,9 +142,6 @@ export default Component.extend({
    */
   pagination: null,
 
-  /**
-   * Computed properties.
-   */
   hasHeaderContent: or(
     'title',
     'primaryAction',

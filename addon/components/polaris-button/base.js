@@ -32,16 +32,10 @@ export default Component.extend({
    */
   iconOnly: false,
 
-  /**
-   * Action handlers.
-   */
   click: mapEventToAction('onClick'),
   focusIn: mapEventToAction('onFocus'),
   focusOut: mapEventToAction('onBlur'),
 
-  /**
-   * Computed properties.
-   */
   sizeClass: computed('size', function() {
     switch (this.get('size')) {
       case 'slim':

@@ -223,9 +223,6 @@ export default Component.extend({
 
   handleMouseUpByBlurring,
 
-  /**
-   * Computed properties.
-   */
   isDisabled: or('disabled', 'loading').readOnly(),
 
   buttonComponentName: computed('url', function() {

@@ -96,9 +96,6 @@ export default Component.extend({
    */
   pagination: null,
 
-  /**
-   * Computed properties.
-   */
   hasBreadcrumbs: gt('breadcrumbs.length', 0).readOnly(),
   hasNavigation: or('hasBreadcrumbs', 'pagination').readOnly(),
   hasActions: or('primaryAction', 'secondaryActions').readOnly(),
