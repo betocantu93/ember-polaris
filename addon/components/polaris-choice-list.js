@@ -104,9 +104,7 @@ export default Component.extend({
    */
   onChange() {},
 
-  /**
-   * @private
-   */
+  
   controlComponent: computed('allowMultiple', function() {
     return this.get('allowMultiple')
       ? 'polaris-checkbox'
@@ -115,6 +113,7 @@ export default Component.extend({
 
   /**
    * @private
+   * @type {String}
    */
   finalName: computed('name', 'allowMultiple', function() {
     let { name, allowMultiple } = this.getProperties('name', 'allowMultiple');
@@ -132,6 +131,7 @@ export default Component.extend({
 
   /**
    * @private
+   * @type {Array}
    */
   checkedChoices: computed('choices.[]', function() {
     const choices = this.get('choices') || [];

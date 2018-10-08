@@ -10,9 +10,11 @@ import layout from '../templates/components/polaris-button';
  * See https://polaris.shopify.com/components/actions/button
  */
 export default Component.extend({
-  // Polaris react behaviour is to render an anchor element if a URL is provided,
-  // or a button element otherwise. Ember components can't support dynamic tagNames,
-  // so we reproduce this behaviour using a dynamic component in block form in our template.
+  /**
+   * Polaris react behaviour is to render an anchor element if a URL is provided,
+   * or a button element otherwise. Ember components can't support dynamic tagNames,
+   * so we reproduce this behaviour using a dynamic component in block form in our template.
+   */
   tagName: '',
 
   layout,

@@ -34,22 +34,14 @@ export default Component.extend({
    * @property alpha
    * @type {Number}
    * @default 1
+   * @public
    */
   alpha: 1,
 
-  /**
-   * @private
-   */
   sliderHeight: null,
 
-  /**
-   * @private
-   */
   draggerHeight: null,
 
-  /**
-   * @private
-   */
   colorLayerStyle: computed('color.{hue,saturation,brightness}', function() {
     const color = this.get('color');
     const { red, green, blue } = hsbaToRgba(color);
@@ -59,9 +51,6 @@ export default Component.extend({
     return htmlSafe(`background: ${background};`);
   }).readOnly(),
 
-  /**
-   * @private
-   */
   draggerY: computed('alpha', 'sliderHeight', function() {
     const { alpha, sliderHeight, draggerHeight } = this.getProperties(
       'alpha',

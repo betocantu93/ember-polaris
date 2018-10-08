@@ -96,18 +96,12 @@ export default Component.extend({
    */
   onPrevious() {},
 
-  /**
-   * @private
-   */
+  
   handleMouseUpByBlurring,
 
-  /**
-   * @private
-   */
+  
   isPreviousDisabled: not('hasPrevious').readOnly(),
 
-  /**
-   * @private
-   */
+  
   isNextDisabled: not('hasNext').readOnly(),
 });

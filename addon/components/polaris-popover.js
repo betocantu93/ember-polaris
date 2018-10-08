@@ -98,15 +98,15 @@ export default Component.extend({
    */
   onClose() {},
 
-  /**
-   * @private
-   */
+  
   verticalPosition: computed('preferredPosition', {
-    // If `preferredPosition` is set to `mostSpace`, the value
-    // will be calculated and set when the user opens the popover.
-    // The only allowed values are 'above' and 'below', so we
-    // return null for anything other than those values and let
-    // ember-basic-dropdown use its default value.
+    /**
+     *  If `preferredPosition` is set to `mostSpace`, the value
+     *  will be calculated and set when the user opens the popover.
+     *  The only allowed values are 'above' and 'below', so we
+     *  return null for anything other than those values and let
+     *  ember-basic-dropdown use its default value.
+     */
     get() {
       let preferredPosition = this.get('preferredPosition');
 
@@ -126,9 +126,7 @@ export default Component.extend({
     },
   }),
 
-  /**
-   * @private
-   */
+  
   triggerStyle: computed(function() {
     return htmlSafe(`
       display: inline-block;

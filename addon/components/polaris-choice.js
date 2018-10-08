@@ -77,11 +77,13 @@ export default Component.extend({
 
   /**
    * @private
+   * @type {Boolean}
    */
   hasDescription: or('error', 'helpText'),
 
   /**
    * @private
+   * @type {String}
    */
   errorId: computed('inputId', function() {
     return `${this.get('inputId')}Error`;
@@ -89,6 +91,7 @@ export default Component.extend({
 
   /**
    * @private
+   * @type {String}
    */
   helpTextId: computed('inputId', function() {
     return `${this.get('inputId')}HelpText`;

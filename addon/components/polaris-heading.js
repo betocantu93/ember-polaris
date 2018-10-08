@@ -14,6 +14,8 @@ import layout from '../templates/components/polaris-heading';
  *   {{#polaris-heading tagName="em"}}
  *     This is an emphasised heading
  *   {{/polaris-heading}}
+ *
+ * @class polaris-heading
  */
 export default Component.extend({
   tagName: 'h2',

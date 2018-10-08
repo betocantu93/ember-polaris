@@ -1,27 +1,29 @@
 import Component from '@ember/component';
 import { computed } from '@ember/object';
-// import { compileTemplate } from '@ember/template-compilation';
 import { assign } from '@ember/polyfills';
-import Ember from 'ember';
+import { compileTemplate } from '@ember/template-compilation';
 
-// Renders a named component with a passed-in hash of properties.
-// This effectively allows us to spread/splat a props hash onto
-// another component.
-//
-// Example - dynamically rendering a my-button component with some props:
-//   {{component-renderer
-//     componentName="my-button"
-//     props=(hash
-//       buttonText="Click me"
-//       onClick=(action "onButtonClicked")
-//     )
-//   }}
+/**
+ *  Renders a named component with a passed-in hash of properties.
+ *  This effectively allows us to spread/splat a props hash onto
+ *  another component.
+ *
+ * Example - dynamically rendering a my-button component with some props:
+ *    {{component-renderer
+ *      componentName="my-button"
+ *      props=(hash
+ *        buttonText="Click me"
+ *        onClick=(action "onButtonClicked")
+ *      )
+ *    }}
+ */
 export default Component.extend({
   tagName: '',
 
   /**
    * Dynamically-generated layout to render the proxied component.
    * @private
+   * @type {String}
    */
   layout: computed('componentName', 'propsString', function() {
     let { componentName, propsString } = this.getProperties(
@@ -29,10 +31,7 @@ export default Component.extend({
       'propsString'
     );
 
-    // Disable linting for this line because the recommended way of importing
-    // results in a "Could not find module `@ember/template-compilation`" error ¯\_(ツ)_/¯
-    // eslint-disable-next-line ember/new-module-imports
-    return Ember.HTMLBars.compile(`
+    return compileTemplate(`
       {{#if hasBlock}}
         {{#component "${componentName}"${propsString}}}
           {{yield}}

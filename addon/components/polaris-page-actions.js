@@ -33,9 +33,7 @@ export default Component.extend({
    */
   secondaryActions: null,
 
-  /**
-   * @private
-   */
+  
   showSecondaryActions: computed('secondaryActions', function() {
     return isArray(this.get('secondaryActions'));
   }).readOnly(),

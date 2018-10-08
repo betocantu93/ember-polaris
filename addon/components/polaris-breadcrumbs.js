@@ -2,6 +2,9 @@ import Component from '@ember/component';
 import { computed, get } from '@ember/object';
 import layout from '../templates/components/polaris-breadcrumbs';
 
+/**
+ * @class polaris-breadcrumbs
+ */
 export default Component.extend({
   tagName: 'nav',
   attributeBindings: ['role'],

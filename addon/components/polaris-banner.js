@@ -119,6 +119,9 @@ export default Component.extend({
    * Pass `withinContentContainer` true if banner is in a modal/card component.
    *
    * TODO implement appProvider/withAppProvider
+   *
+   * @type {Boolean}
+   * @default false
    */
   withinContentContainer: false,
 

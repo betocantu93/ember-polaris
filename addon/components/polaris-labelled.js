@@ -11,8 +11,11 @@ import layout from '../templates/components/polaris-labelled';
  * Internal Polaris labelled component, used to add labels to form fields.
  */
 export default Component.extend({
-  // Tagless component so that Ember doesn't apply the `id`
-  // attribute to the component's root element.
+  /**
+   * Tagless component so that Ember doesn't apply the `id`
+   * attribute to the component's root element.
+   * @type {String}
+   */
   tagName: '',
 
   layout,
@@ -28,6 +31,7 @@ export default Component.extend({
   id: computed(function() {
     return guidFor(this);
   }),
+
   /**
    * Text for the label
    *

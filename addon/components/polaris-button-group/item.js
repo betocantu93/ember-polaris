@@ -40,9 +40,6 @@ export default Component.extend({
    */
   focused: false,
 
-  /**
-   * Events.
-   */
   focusIn() {
     this.set('focused', true);
   },

@@ -38,9 +38,7 @@ export default Component.extend({
    */
   text: null,
 
-  /**
-   * @private
-   */
+  
   ariaLabel: null,
 
   didRender() {

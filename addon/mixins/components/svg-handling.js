@@ -24,13 +24,14 @@ export default Mixin.create({
   /**
    * Generated unique ID to be set on the rendered SVG element.
    *
+   * NOTE: We append '-svg' to the component's Ember-generated GUID,
+   * because Ember will automatically use that GUID as the ID
+   * for the root element of non-tagless components.
+   *
    * @property svgElementId
    * @type {string}
    */
   svgElementId: computed(function() {
-    // We append '-svg' to the component's Ember-generated GUID,
-    // because Ember will automatically use that GUID as the ID
-    // for the root element of non-tagless components.
     return `${guidFor(this)}-svg`;
   }).readOnly(),
 

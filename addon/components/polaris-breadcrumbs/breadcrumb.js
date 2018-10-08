@@ -4,6 +4,9 @@ import LinkComponent from '@ember/routing/link-component';
 import { handleMouseUpByBlurring } from '../../utils/focus';
 import layout from '../../templates/components/polaris-breadcrumbs/breadcrumb';
 
+/**
+ * @class polaris-breadcrumbs/breadcrumb
+ */
 export default LinkComponent.extend({
   attributeBindings: ['dataPolarisUnstyled:data-polaris-unstyled'],
 

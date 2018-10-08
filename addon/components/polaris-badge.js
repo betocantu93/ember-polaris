@@ -64,19 +64,10 @@ export default Component.extend({
    */
   status: null,
 
-  /**
-   * @private
-   */
   hasProgress: notEmpty('progress'),
 
-  /**
-   * @private
-   */
   hasStatus: notEmpty('status'),
 
-  /**
-   * @private
-   */
   progressDescription: computed('progress', function() {
     const progress = this.get('progress');
     if (isBlank(progress) || progress === 'default') {
@@ -86,9 +77,6 @@ export default Component.extend({
     return PROGRESS_LABELS[progress];
   }).readOnly(),
 
-  /**
-   * @private
-   */
   progressClass: computed('progress', function() {
     const progress = this.get('progress');
     if (isBlank(progress) || progress === 'default') {
@@ -98,9 +86,6 @@ export default Component.extend({
     return `Polaris-Badge--progress${classify(progress)}`;
   }).readOnly(),
 
-  /**
-   * @private
-   */
   statusDescription: computed('status', function() {
     const status = this.get('status');
     if (isBlank(status) || status === 'default') {
@@ -110,9 +95,6 @@ export default Component.extend({
     return STATUS_LABELS[status];
   }).readOnly(),
 
-  /**
-   * @private
-   */
   statusClass: computed('status', function() {
     const status = this.get('status');
     if (isBlank(status) || status === 'default') {

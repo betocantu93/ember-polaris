@@ -39,9 +39,7 @@ export default Component.extend({
    */
   spacing: null,
 
-  /**
-   * @private
-   */
+  
   spacingClass: computed('spacing', function() {
     let spacing = this.get('spacing');
     if (allowedSpacings.indexOf(spacing) > -1) {

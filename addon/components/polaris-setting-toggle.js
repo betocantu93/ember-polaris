@@ -7,7 +7,9 @@ import layout from '../templates/components/polaris-setting-toggle';
  * See https://polaris.shopify.com/components/actions/setting-toggle
  */
 export default Component.extend({
-  // Tagless component, renders a `polaris-card` internally.
+  /**
+   * Tagless component, renders a `polaris-card` internally.
+   */
   tagName: '',
 
   layout,

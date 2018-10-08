@@ -281,9 +281,6 @@ export default Component.extend(ContextBoundEventListenersMixin, {
     return isDragging && !error && overlay;
   }).readOnly(),
 
-  /**
-   * Event handlers
-   */
   handleClick(event) {
     let { onClick, disabled } = this.getProperties('onClick', 'disabled');
     if (disabled) {
@@ -540,9 +537,6 @@ export default Component.extend(ContextBoundEventListenersMixin, {
     fileInputNode.click();
   },
 
-  /**
-   * Component life-cycle hooks
-   */
   init() {
     this._super(...arguments);
     this.dragTargets = [];

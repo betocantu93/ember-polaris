@@ -45,14 +45,8 @@ export default Component.extend({
    */
   onActionAnyItem() {},
 
-  /**
-   * @private
-   */
   hasMultipleSections: gt('finalSections.length', 1).readOnly(),
 
-  /**
-   * @private
-   */
   finalSections: computed('items', 'sections.[]', function() {
     let finalSections = [];
 

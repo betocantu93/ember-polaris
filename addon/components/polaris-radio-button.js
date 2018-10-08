@@ -8,7 +8,9 @@ import layout from '../templates/components/polaris-radio-button';
  * See https://polaris.shopify.com/components/forms/radio-button
  */
 export default Component.extend({
-  // Tagless component, renders a `polaris-choice` component internally.
+  /**
+   *  Tagless component, renders a `polaris-choice` component internally.
+   */
   tagName: '',
 
   layout,
@@ -123,16 +125,12 @@ export default Component.extend({
    */
   onBlur() {},
 
-  /**
-   * @private
-   */
+  
   _id: computed('inputId', function() {
     return this.get('inputId') || `polaris-radio-button-${guidFor(this)}`;
   }).readOnly(),
 
-  /**
-   * @private
-   */
+  
   describedBy: computed('helpText', '_id', function() {
     const helpText = this.get('helpText');
     return helpText ? `${this.get('_id')}HelpText` : null;

@@ -30,6 +30,7 @@ export default Component.extend({
 
   /**
    * @private
+   * @type {String}
    */
   itemId: computed(function() {
     return guidFor(this);

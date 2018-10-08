@@ -13,7 +13,10 @@ export default BaseComponent.extend({
 
   dataPolarisUnstyled: 'true',
 
-  //  Allow click to perform its default action.
+  /**
+   * Allow click to perform its default action.
+   * @type {Function}
+   */
   click: mapEventToAction('onClick', { preventDefault: false }),
 
   target: computed('external', function() {

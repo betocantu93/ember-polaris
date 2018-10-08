@@ -7,6 +7,7 @@ import layout from '../templates/components/polaris-icon';
 import SvgHandling from '../mixins/components/svg-handling';
 
 // TODO: look into importing icons properly.
+
 export default Component.extend(SvgHandling, {
   tagName: 'span',
 

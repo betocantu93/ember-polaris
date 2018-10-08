@@ -55,9 +55,7 @@ export default Component.extend({
    */
   text: null,
 
-  /**
-   * @private
-   */
+  
   dataPolarisUnstyled: 'true',
 
   click: mapEventToAction('onClick', {

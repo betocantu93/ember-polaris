@@ -4,10 +4,14 @@ import layout from '../templates/components/polaris-label';
 
 /**
  * Internal Polaris label component.
+ * @class polaris-label
  */
 export default Component.extend({
-  // Tagless component so that Ember doesn't apply the `id`
-  // attribute to the component's root element.
+  /**
+   * Tagless component so that Ember doesn't apply the `id`
+   * attribute to the component's root element.
+   * @type {String}
+   */
   tagName: '',
 
   layout,

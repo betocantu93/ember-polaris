@@ -81,14 +81,10 @@ export default Component.extend({
    */
   wrap: true,
 
-  /**
-   * @private
-   */
+  
   noWrap: equal('wrap', false).readOnly(),
 
-  /**
-   * @private
-   */
+  
   spacingClassName: computed('spacing', function() {
     const spacing = this.get('spacing');
     if (isBlank(spacing)) {
@@ -98,9 +94,6 @@ export default Component.extend({
     return `Polaris-Stack--spacing${classify(spacing)}`;
   }).readOnly(),
 
-  /**
-   * @private
-   */
   alignmentClassName: computed('alignment', function() {
     const alignment = this.get('alignment');
     if (isBlank(alignment)) {
@@ -110,9 +103,6 @@ export default Component.extend({
     return `Polaris-Stack--alignment${classify(alignment)}`;
   }).readOnly(),
 
-  /**
-   * @private
-   */
   distributionClassName: computed('distribution', function() {
     const distribution = this.get('distribution');
     if (isBlank(distribution) || distribution === 'baseline') {

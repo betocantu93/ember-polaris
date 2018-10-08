@@ -48,9 +48,7 @@ export default Component.extend({
    */
   alt: null,
 
-  /**
-   * @private
-   */
+  
   sizeClass: computed('size', function() {
     let size = this.get('size');
     if (allowedSizes.indexOf(size) === -1) {

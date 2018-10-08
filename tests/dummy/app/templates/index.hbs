@@ -1,41 +1,13 @@
-{{#polaris-page
-  title="This is the application route"
-  primaryAction=(hash
-    text="Primary"
-    onAction=(action (mut primaryClicked) true)
-  )
-  secondaryActions=(array
-    (hash
-      text="Secondary 1"
-      onAction=(action (mut secondary1Clicked) true)
-    )
-    (hash
-      text="Secondary 2"
-      onAction=(action (mut secondary2Clicked) true)
-    )
-  )
-}}
-  <div>
-    {{#link-to "test"}}
-      Go to test route
-    {{/link-to}}
-  </div>
+{{docs-header}}
 
-  <div>
-    {{#link-to "test.child"}}
-      Go to child route
-    {{/link-to}}
-  </div>
+{{docs-hero
+  logo='ember'
+  slimHeading='My'
+  strongHeading='Addon'
+  byline='My addon demo/marketing page.'}}
 
-  <div>
-    {{#link-to "dropzone"}}
-      Dropzone
-    {{/link-to}}
-  </div>
-
-  {{polaris-link
-    url="https://github.com/smile-io/ember-polaris"
-    external=true
-    text="Ember Polaris on GitHub"
-  }}
-{{/polaris-page}}
+{{#docs-demo as |demo|}}
+  {{#demo.example name='my-demo.hbs'}}
+    <p>Make sure to read up on the DocsDemo component before building out this page.</p>
+  {{/demo.example}}
+{{/docs-demo}}

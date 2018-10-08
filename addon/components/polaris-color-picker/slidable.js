@@ -66,21 +66,25 @@ export default Component.extend({
 
   /**
    * @private
+   * @type {Boolean}
    */
   isDragging: false,
 
   /**
    * @private
+   * @type {Function}
    */
   mouseDown: startDrag,
 
   /**
    * @private
+   * @type {Function}
    */
   touchStart: startDrag,
 
   /**
    * @private
+   * @type {String}
    */
   draggerStyle: computed('draggerX', 'draggerY', function() {
     const { draggerX, draggerY } = this.getProperties('draggerX', 'draggerY');
@@ -90,6 +94,7 @@ export default Component.extend({
 
   /**
    * @private
+   * @type {Function}
    */
   handleMove(event) {
     if (!this.get('isDragging')) {
@@ -113,6 +118,7 @@ export default Component.extend({
 
   /**
    * @private
+   * @type {Function}
    */
   handleDragEnd() {
     this.set('isDragging', false);
@@ -128,6 +134,7 @@ export default Component.extend({
 
   /**
    * @private
+   * @type {Function}
    */
   handleDraggerMove(clientX, clientY) {
     const moveHandler = this.get('onChange');

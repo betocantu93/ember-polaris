@@ -11,7 +11,10 @@ import layout from '../templates/components/polaris-checkbox';
  * See https://polaris.shopify.com/components/forms/checkbox
  */
 export default Component.extend({
-  // Tagless component, renders a `polaris-choice` component internally.
+  /**
+   * Tagless component, renders a `polaris-choice` component internally.
+   * @type {String}
+   */
   tagName: '',
 
   layout,
@@ -150,11 +153,13 @@ export default Component.extend({
 
   /**
    * @private
+   * @type {Boolean}
    */
   isIndeterminate: equal('checked', 'indeterminate').readOnly(),
 
   /**
    * @private
+   * @type {Boolean}
    */
   isChecked: computed('isIndeterminate', 'checked', function() {
     return !this.get('isIndeterminate') && Boolean(this.get('checked'));
@@ -162,6 +167,7 @@ export default Component.extend({
 
   /**
    * @private
+   * @type {String}
    */
   checkedState: computed('isIndeterminate', 'isChecked', function() {
     return this.get('isIndeterminate') ? 'mixed' : `${this.get('isChecked')}`;
@@ -169,6 +175,7 @@ export default Component.extend({
 
   /**
    * @private
+   * @type {String}
    */
   checkboxClasses: computed('isIndeterminate', function() {
     let classNames = ['Polaris-Checkbox__Input'];
@@ -182,6 +189,7 @@ export default Component.extend({
 
   /**
    * @private
+   * @type {String}
    */
   _id: computed('inputId', function() {
     return this.get('inputId') || `polaris-checkbox-${guidFor(this)}`;
@@ -189,6 +197,7 @@ export default Component.extend({
 
   /**
    * @private
+   * @type {String}
    */
   describedBy: computed('error', 'helpText', '_id', function() {
     let describedBy = [];
