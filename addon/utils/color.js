@@ -11,6 +11,10 @@ import { clamp } from './math';
  * Examples:
  *   hsbaToRgba({ hue: 70, saturation: 0.3, brightness: 0.8 })
  *     => { red: 194, green: 204, blue: 143, alpha: 1 }
+ *
+ * @export
+ * @param {*} color
+ * @returns
  */
 export function hsbaToRgba(color) {
   const { hue, saturation, brightness, alpha = 1 } = color;

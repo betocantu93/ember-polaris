@@ -46,13 +46,9 @@ export default Component.extend({
    */
   onChange: null,
 
-  
-  sliderHeight: null,
+sliderHeight: null,
 
-  
-  draggerHeight: null,
-
-  
+draggerHeight: null,
   draggerY: computed('hue', 'sliderHeight', function() {
     const { hue, sliderHeight, draggerHeight } = this.getProperties(
       'hue',

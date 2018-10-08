@@ -52,7 +52,6 @@ export default Component.extend({
    */
   onClick() {},
 
-  
   linkClass: computed('class', function() {
     let linkClass = 'Polaris-Link';
     const externalClasses = this.get('class');

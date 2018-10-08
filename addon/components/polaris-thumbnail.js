@@ -48,7 +48,6 @@ export default Component.extend({
    */
   alt: null,
 
-  
   sizeClass: computed('size', function() {
     let size = this.get('size');
     if (allowedSizes.indexOf(size) === -1) {

@@ -40,7 +40,6 @@ export default Component.extend({
    */
   text: null,
 
-  
   variationClass: computed('variation', function() {
     const variation = this.get('variation');
     if (isEmpty(variation)) {

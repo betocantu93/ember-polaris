@@ -104,8 +104,7 @@ export default Component.extend({
    */
   onChange() {},
 
-  
-  controlComponent: computed('allowMultiple', function() {
+controlComponent: computed('allowMultiple', function() {
     return this.get('allowMultiple')
       ? 'polaris-checkbox'
       : 'polaris-radio-button';

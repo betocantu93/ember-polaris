@@ -48,7 +48,6 @@ export default Component.extend({
    */
   text: null,
 
-  
   sizeClassName: computed('size', function() {
     const size = this.get('size');
     return `Polaris-DisplayText--size${classify(size)}`;

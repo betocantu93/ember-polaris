@@ -81,10 +81,7 @@ export default Component.extend({
    */
   wrap: true,
 
-  
-  noWrap: equal('wrap', false).readOnly(),
-
-  
+noWrap: equal('wrap', false).readOnly(),
   spacingClassName: computed('spacing', function() {
     const spacing = this.get('spacing');
     if (isBlank(spacing)) {

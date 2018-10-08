@@ -98,8 +98,7 @@ export default Component.extend({
    */
   onClose() {},
 
-  
-  verticalPosition: computed('preferredPosition', {
+verticalPosition: computed('preferredPosition', {
     /**
      *  If `preferredPosition` is set to `mostSpace`, the value
      *  will be calculated and set when the user opens the popover.
@@ -125,8 +124,6 @@ export default Component.extend({
       return null;
     },
   }),
-
-  
   triggerStyle: computed(function() {
     return htmlSafe(`
       display: inline-block;

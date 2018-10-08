@@ -45,10 +45,7 @@ export default Component.extend({
    */
   onChange: null,
 
-  
-  pickerSize: null,
-
-  
+pickerSize: null,
   colorLayerStyle: computed('color.{hue,alpha}', function() {
     const { hue, alpha = 1 } = this.get('color');
     const { red, green, blue } = hsbaToRgba({
@@ -61,16 +58,13 @@ export default Component.extend({
     return htmlSafe(`background-color: ${backgroundColor};`);
   }).readOnly(),
 
-  
-  draggerX: computed('color.saturation', 'pickerSize', function() {
+draggerX: computed('color.saturation', 'pickerSize', function() {
     const {
       color: { saturation },
       pickerSize,
     } = this.getProperties('color', 'pickerSize');
     return clamp(saturation * pickerSize, 0, pickerSize);
   }).readOnly(),
-
-  
   draggerY: computed('color.brightness', 'pickerSize', function() {
     const {
       color: { brightness },

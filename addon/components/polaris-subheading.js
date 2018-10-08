@@ -38,7 +38,6 @@ export default Component.extend({
    */
   text: null,
 
-  
   ariaLabel: null,
 
   didRender() {

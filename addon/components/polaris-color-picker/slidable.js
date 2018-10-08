@@ -64,38 +64,18 @@ export default Component.extend({
    */
   onDraggerHeightChanged: null,
 
-  /**
-   * @private
-   * @type {Boolean}
-   */
   isDragging: false,
 
-  /**
-   * @private
-   * @type {Function}
-   */
   mouseDown: startDrag,
 
-  /**
-   * @private
-   * @type {Function}
-   */
   touchStart: startDrag,
 
-  /**
-   * @private
-   * @type {String}
-   */
   draggerStyle: computed('draggerX', 'draggerY', function() {
     const { draggerX, draggerY } = this.getProperties('draggerX', 'draggerY');
     const transform = `translate3d(${draggerX}px, ${draggerY}px, 0)`;
     return htmlSafe(`transform: ${transform};`);
   }).readOnly(),
 
-  /**
-   * @private
-   * @type {Function}
-   */
   handleMove(event) {
     if (!this.get('isDragging')) {
       return;
@@ -116,10 +96,6 @@ export default Component.extend({
     this.handleDraggerMove(event.clientX, event.clientY);
   },
 
-  /**
-   * @private
-   * @type {Function}
-   */
   handleDragEnd() {
     this.set('isDragging', false);
 
@@ -132,10 +108,6 @@ export default Component.extend({
     $Ember(window).off('touchcancel');
   },
 
-  /**
-   * @private
-   * @type {Function}
-   */
   handleDraggerMove(clientX, clientY) {
     const moveHandler = this.get('onChange');
     if (typeof moveHandler !== 'function') {

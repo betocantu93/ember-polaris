@@ -125,12 +125,9 @@ export default Component.extend({
    */
   onBlur() {},
 
-  
-  _id: computed('inputId', function() {
+_id: computed('inputId', function() {
     return this.get('inputId') || `polaris-radio-button-${guidFor(this)}`;
   }).readOnly(),
-
-  
   describedBy: computed('helpText', '_id', function() {
     const helpText = this.get('helpText');
     return helpText ? `${this.get('_id')}HelpText` : null;
