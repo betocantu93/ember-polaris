@@ -7094,10 +7094,10 @@ eslint-config-prettier@6.11.0:
   dependencies:
     get-stdin "^6.0.0"
 
-eslint-plugin-ember@8.13.0:
-  version "8.13.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-ember/-/eslint-plugin-ember-8.13.0.tgz#7178e059ecfb37df46644966fbacd02abb98ac13"
-  integrity sha512-CD7K8m2pTpDKInpzivpku81N5EbvEdhqy/lS1InEp0pZD+G6zi/yK1/jUxz5bAURnoFtF5r6xZZLF56zCC32+w==
+eslint-plugin-ember@9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-ember/-/eslint-plugin-ember-9.0.0.tgz#34a86a31d12bded00f5967b43a54eeb548329dc3"
+  integrity sha512-P83EWqBos5FKQcTJDStWHwb1jfj5Xsrfq5rSB3r1P7dgcm3yTVyEXiTVgq0lBvNWN8vHGlQ6SfnUx8VjHgAxYA==
   dependencies:
     "@ember-data/rfc395-data" "^0.0.4"
     ember-rfc176-data "^0.3.15"
@@ -7131,10 +7131,10 @@ eslint-plugin-prettier@3.1.4:
   dependencies:
     prettier-linter-helpers "^1.0.0"
 
-eslint-plugin-smile-ember@7.1.0:
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-smile-ember/-/eslint-plugin-smile-ember-7.1.0.tgz#c0cf8be7c28479d99c5e12a98b447f2331c4d68a"
-  integrity sha512-ixjTc5za1ftZPRJUNoUgxZ5e8F/O7J2SKittccYnWQ70QwYkbPs3rjk4lTHESIHNeTMwQSX3CMhdeiSqTci7YQ==
+eslint-plugin-smile-ember@8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-smile-ember/-/eslint-plugin-smile-ember-8.0.0.tgz#de050005c4cd36754bef620f637331cc48bd0b0b"
+  integrity sha512-x477S98O7hq+cqGmuYVwZjiEUA1PBq5BeYx8WQHfwBskCHFOOfK8VqjJPKRtm4x4xXjhv0aotYzblA89C57uQg==
   dependencies:
     deep-value "^1.0.4"
     requireindex "~1.2.0"
